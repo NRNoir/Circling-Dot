@@ -1,2 +1,65 @@
-# Circling-Dot
-All the scripts from my first game Circling Dot
+# **Circling-Dot**
+
+![Enregistrement de lécran 2025-11-25 104938](https://github.com/user-attachments/assets/42236272-6dc5-4250-85cf-41a01653853e)
+
+
+## Description 
+
+Ce Repository represente la compilation de mes différents scripts utilisés pour la création de mon premier jeu fait sur le moteur de jeu : Godot.
+
+## Table des matieres
+
+- [A propos](#a-propos)
+- [Technologies](#technologies)
+- [Scripts utilises](#scripts-utilises)
+- [Installation](#installation)
+- [Enseignements du projet](#enseignements-du-projet)
+- [Auteur](#auteur)
+
+## A propos 
+
+Ce projet fait suite à la réalisation d'une leçon disponible sur "Learn To GDScript From Zero" créée par GDQuest. Disponible ici : https://gdquest.com/tutorial/godot/learning-paths/learn-gdscript-from-zero/ .
+
+Mon objectif avec ce mini-projet est d’apprendre l’utilisation du moteur Godot et de son langage GDScript, tout en gardant un scope volontairement limité (UI simple, menu basique, mécanique de jeu élémentaire, scripts commentés).
+
+Certains scripts ont été réalisé avec l'aide de tutoriels trouvé sur Youtube. 
+Le jeu a été développé environ 4 jours. 
+
+## Technologies
+
+Version et outils utilisés :
+
+- Godot 4.5
+- Editeur intégré de Godot
+- GDScript
+
+## Scripts utilises
+
+Scripts réalisés pour le devéloppement de Circling Dot : 
+
+- Arc (dessin par le code de l'arc de cercle)
+- Cercle Movement
+- Game Over
+- Main Menu
+- Quit Button
+- Return to Menu
+- Score
+- Timer Label
+
+## Installation
+
+Pour essayer le jeu : 
+
+- Télécharge la version jouable depuis la section Releases du dépôt GitHub.
+- Extrayez le zip téléchargé.
+- Lancez l’exécutable : CirclingDot.exe
+
+  
+
+## Enseignements du projet
+
+## Auteur
+
+- Nom : Cyril Coirault
+- GitHub : [NRNOIR](https://github.com/NRNoir)
+- [LinkedIn](https://www.linkedin.com/in/cyril-coirault-37585511a/)
