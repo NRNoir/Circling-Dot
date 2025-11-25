@@ -14,7 +14,7 @@ Ce Repo représente la compilation de mes différents scripts utilisés pour la 
 - [Scripts utilises](#scripts-utilises)
 - [Installation](#installation)
 - [Enseignements du projet](#enseignements-du-projet)
-- [Points Ameliorations](#points-ameliorations)
+- [Points ameliorations](#points-ameliorations)
 - [Auteur](#auteur)
 
 ## A propos 
