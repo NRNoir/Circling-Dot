@@ -5,7 +5,7 @@
 
 ## Description 
 
-Ce Repo represente la compilation de mes différents scripts utilisés pour la création de mon premier jeu fait sur le moteur de jeu : Godot. Mais aussi de mes enseignements.
+Ce Repo représente la compilation de mes différents scripts utilisés pour la création de mon premier jeu fait sur le moteur de jeu : Godot. Mais aussi de mes enseignements.
 
 ## Table des matieres
 
@@ -14,6 +14,7 @@ Ce Repo represente la compilation de mes différents scripts utilisés pour la c
 - [Scripts utilises](#scripts-utilises)
 - [Installation](#installation)
 - [Enseignements du projet](#enseignements-du-projet)
+- [Points Ameliorations](#points-ameliorations)
 - [Auteur](#auteur)
 
 ## A propos 
@@ -32,6 +33,7 @@ Version et outils utilisés :
 - Godot 4.5
 - Editeur intégré de Godot
 - GDScript
+- Procreate pour l'animation
 
 ## Scripts utilises
 
@@ -63,10 +65,10 @@ Pour le projet Godot :
 - Télécharger la version correspondant au projet
 - Lancer l'exe de Godot
 
-**2. Cloner le projet
+**2. Cloner le projet**
 
 ```bash
-à changer
+git clone https://github.com/NRNoir/CirclingDot.git
 ```
 Ou bien télécharger le ZIP du repo.
 
@@ -78,6 +80,39 @@ Ou bien télécharger le ZIP du repo.
 - Godot ajoute automatiquement le projet à ta liste
 
 ## Enseignements du projet
+
+- Utiliser le moteur Godot 4.5 (scènes, noeuds, signaux, script)
+- Manipuler GDScript (à un niveau débutant)
+- Importer des asssets (Fonts, images)
+- Manipuler le style des UIs
+- Réaliser une animation sur Procreate et réaliser l'animation par frame sur Godot
+- Créer un build pour Windows
+- Rédiger un README "propre"
+
+## Points ameliorations
+
+**1. Interface Utilisateur (UI)**
+
+- Améliorer la structure de mes interfaces avec des Canvas Layer
+- Créer un UI Manager
+- Les rendre plus interactif
+
+**2. Organisation du code**
+
+- Faire des scripts plus petits et modulaires
+- Améliorer et être constant dans le nommage des scripts
+- Ajouter des commentaires plus précis et pertinents 
+- Vérifier les bonnes pratiques
+
+**3. Fonctionnalités**
+
+- Ajouter un système de sauvegarde du score
+- Implémenter des modes de jeu variés, mais simples
+
+**4. Sound Design**
+
+- Ajouter une musique
+- Ajouter des sons pour les cliques de menu et In Game
 
 ## Auteur
 
