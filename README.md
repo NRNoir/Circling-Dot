@@ -5,7 +5,7 @@
 
 ## Description 
 
-Ce Repository represente la compilation de mes différents scripts utilisés pour la création de mon premier jeu fait sur le moteur de jeu : Godot.
+Ce Repo represente la compilation de mes différents scripts utilisés pour la création de mon premier jeu fait sur le moteur de jeu : Godot. Mais aussi de mes enseignements.
 
 ## Table des matieres
 
