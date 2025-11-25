@@ -50,11 +50,32 @@ Scripts réalisés pour le devéloppement de Circling Dot :
 
 Pour essayer le jeu : 
 
-- Télécharge la version jouable depuis la section Releases du dépôt GitHub.
-- Extrayez le zip téléchargé.
-- Lancez l’exécutable : CirclingDot.exe
+- Télécharger la version jouable depuis la section Releases du dépôt GitHub.
+- Extraire le zip téléchargé.
+- Lancer l’exécutable : CirclingDot.exe
+- Jouer !
 
-  
+Pour le projet Godot : 
+
+**1. Télécharger Godot**
+
+- Aller sur le site officiel : https://godotengine.org
+- Télécharger la version correspondant au projet
+- Lancer l'exe de Godot
+
+**2. Cloner le projet
+
+```bash
+à changer
+```
+Ou bien télécharger le ZIP du repo.
+
+**3. Ouvrir le projet**
+
+- Ouvrir Godot
+- Dans le Project Manager, cliquer sur Import
+- Sélectionner le fichier project.godot à la racine du repo
+- Godot ajoute automatiquement le projet à ta liste
 
 ## Enseignements du projet
 
