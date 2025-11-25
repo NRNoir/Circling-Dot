@@ -1,0 +1,127 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvoqd7juy2fc1"]
+
+[ext_resource type="Script" uid="uid://dj0n3g2slty43" path="res://scripts/game_over_hud.gd" id="1_cr8m1"]
+[ext_resource type="FontFile" uid="uid://41efbsg4mw8c" path="res://images/Fonts/loede/LoedeDEMO-Medium.ttf" id="2_vod57"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe2ki"]
+bg_color = Color(0.9867516, 0.9867516, 0.9867516, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.23753911, 0.23753914, 0.23753908, 0.2509804)
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cr8m1"]
+bg_color = Color(0.9607843, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.23753911, 0.23753914, 0.23753908, 0.2509804)
+shadow_size = 1
+shadow_offset = Vector2(0, 0.535)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vod57"]
+bg_color = Color(0.8288101, 2.7193873e-06, 5.7756904e-07, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ux6jm"]
+
+[node name="GameOverHUD" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = 4.0
+offset_right = -24.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_cr8m1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.25
+offset_top = -98.5
+offset_right = 111.25
+offset_bottom = 98.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Final Score" type="Label" parent="VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Retry" type="Button" parent="VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.2015267, 0.20152652, 0.20152661, 1)
+theme_override_colors/font_focus_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/font_pressed_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_fonts/font = ExtResource("2_vod57")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qe2ki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cr8m1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vod57")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ux6jm")
+text = "Retry"
+
+[node name="Main Menu" type="Button" parent="VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.2015267, 0.20152652, 0.20152661, 1)
+theme_override_colors/font_focus_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/font_pressed_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_fonts/font = ExtResource("2_vod57")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qe2ki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cr8m1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vod57")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ux6jm")
+text = "Main Menu"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.2015267, 0.20152652, 0.20152661, 1)
+theme_override_colors/font_focus_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/font_pressed_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_fonts/font = ExtResource("2_vod57")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_qe2ki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cr8m1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vod57")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ux6jm")
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,207 @@
+[gd_scene load_steps=28 format=3 uid="uid://2yvq6yiiep7y"]
+
+[ext_resource type="Script" uid="uid://03jbkpkjqktm" path="res://scripts/Main Menu.gd" id="1_l6cm7"]
+[ext_resource type="FontFile" uid="uid://q5ibhpbrdrky" path="res://images/Fonts/loede/LoedeDEMO-Light.ttf" id="2_8egab"]
+[ext_resource type="Texture2D" uid="uid://dmj55nmfhqsll" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-0.png" id="2_a8gd2"]
+[ext_resource type="FontFile" uid="uid://41efbsg4mw8c" path="res://images/Fonts/loede/LoedeDEMO-Medium.ttf" id="3_gw5y6"]
+[ext_resource type="Texture2D" uid="uid://cgok57rdhgumq" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-1.png" id="3_hstxw"]
+[ext_resource type="Texture2D" uid="uid://b5j6fpu44m2ic" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-2.png" id="4_8egab"]
+[ext_resource type="Texture2D" uid="uid://biv8otpq7ahuq" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-3.png" id="5_gw5y6"]
+[ext_resource type="Texture2D" uid="uid://d02n28adqxuyi" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-4.png" id="6_svtp6"]
+[ext_resource type="Texture2D" uid="uid://b5rf5pjv7ua13" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-5.png" id="7_1dfpl"]
+[ext_resource type="Texture2D" uid="uid://b3judjd7sdqxq" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-6.png" id="8_qywvv"]
+[ext_resource type="Texture2D" uid="uid://baruibhxvsblj" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-7.png" id="9_3wgol"]
+[ext_resource type="Texture2D" uid="uid://cx8a4r04rw5iv" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-8.png" id="10_1acrt"]
+[ext_resource type="Texture2D" uid="uid://cbpylc3rncye3" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-9.png" id="11_vr8o3"]
+[ext_resource type="Texture2D" uid="uid://dgb82wi76h4x6" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-10.png" id="12_1a85y"]
+[ext_resource type="Texture2D" uid="uid://brnpmahd7l17v" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-11.png" id="13_hl5e0"]
+[ext_resource type="Texture2D" uid="uid://db65vqgsi08ao" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-12.png" id="14_engjn"]
+[ext_resource type="Texture2D" uid="uid://crieo27y5aib3" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-13.png" id="15_6h3lr"]
+[ext_resource type="Texture2D" uid="uid://cau4mjf5e5y30" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-14.png" id="16_dj67d"]
+[ext_resource type="Texture2D" uid="uid://ck6pw7c8tqqdp" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-15.png" id="17_6vcge"]
+[ext_resource type="Texture2D" uid="uid://ch7tbn3bjuhbw" path="res://images/Illustration_sans_titre.png/6b231e1675da40ec9650a30444a989eb5jJa1VdOHiNJbpqH-16.png" id="18_ip0br"]
+[ext_resource type="Texture2D" uid="uid://b7dsvukvkosqr" path="res://images/Red_Circle_full.png" id="21_gw5y6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6cm7"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(0.9867516, 0.9867516, 0.9867516, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.23753911, 0.23753914, 0.23753908, 0.2509804)
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
+bg_color = Color(0.9607843, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.23753911, 0.23753914, 0.23753908, 0.2509804)
+shadow_size = 1
+shadow_offset = Vector2(0, 0.535)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.8288101, 2.7193873e-06, 5.7756904e-07, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vue75"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xyero"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a8gd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hstxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8egab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gw5y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_svtp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1dfpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qywvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3wgol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1acrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vr8o3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1a85y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hl5e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_engjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6h3lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dj67d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6vcge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ip0br")
+}],
+"loop": true,
+"name": &"default",
+"speed": 14.0
+}]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l6cm7")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 120.0
+offset_top = -220.0
+offset_right = 576.0
+offset_bottom = -119.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.12225237, 0.1222522, 0.12225228, 1)
+theme_override_fonts/font = ExtResource("2_8egab")
+theme_override_font_sizes/font_size = 76
+text = "Circling Dot"
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 136.0
+offset_top = -20.0
+offset_right = 336.0
+offset_bottom = 105.0
+grow_vertical = 2
+theme_override_constants/separation = 28
+
+[node name="Start Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.2015267, 0.20152652, 0.20152661, 1)
+theme_override_colors/font_focus_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/font_pressed_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_fonts/font = ExtResource("3_gw5y6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vue75")
+text = "Start Game"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.2015267, 0.20152652, 0.20152661, 1)
+theme_override_colors/font_focus_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/font_pressed_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_fonts/font = ExtResource("3_gw5y6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vue75")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vue75")
+text = "Exit"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(855.99994, 301.50003)
+scale = Vector2(0.36341462, 0.29364404)
+sprite_frames = SubResource("SpriteFrames_xyero")
+autoplay = "default"
+frame_progress = 0.07728949
+
+[node name="RedCircleFull" type="Sprite2D" parent="."]
+position = Vector2(547.4375, 146.5625)
+scale = Vector2(0.20329154, 0.20329177)
+texture = ExtResource("21_gw5y6")
+
+[connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

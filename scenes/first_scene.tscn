@@ -1,0 +1,116 @@
+[gd_scene load_steps=13 format=3 uid="uid://b6ffsephylpkb"]
+
+[ext_resource type="Texture2D" uid="uid://b7dsvukvkosqr" path="res://images/Red_Circle_full.png" id="1_j4aoe"]
+[ext_resource type="Script" uid="uid://c4pjh62gchkae" path="res://scripts/CercleMovement.gd" id="2_cmunl"]
+[ext_resource type="PackedScene" uid="uid://bg6y8xqw6klwe" path="res://scenes/arc.tscn" id="3_cmunl"]
+[ext_resource type="Script" uid="uid://2pmbp5x61fnk" path="res://scripts/Score.gd" id="4_d3xhb"]
+[ext_resource type="Script" uid="uid://bempume0wj35d" path="res://scripts/timer_label.gd" id="5_h1gsm"]
+[ext_resource type="FontFile" uid="uid://41efbsg4mw8c" path="res://images/Fonts/loede/LoedeDEMO-Medium.ttf" id="6_66tf5"]
+[ext_resource type="Script" uid="uid://dsvj1o7sv1wtq" path="res://scripts/return_to_menu.gd" id="7_hsfv8"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vy5i1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ngiyr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hsfv8"]
+bg_color = Color(0.9867516, 0.9867516, 0.9867516, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.23753911, 0.23753914, 0.23753908, 0.2509804)
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opxuv"]
+bg_color = Color(0.9607843, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.23753911, 0.23753914, 0.23753908, 0.2509804)
+shadow_size = 1
+shadow_offset = Vector2(0, 0.535)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_66tf5"]
+bg_color = Color(0.8288101, 2.7193873e-06, 5.7756904e-07, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[node name="first_scene" type="Node2D"]
+metadata/_edit_vertical_guides_ = [544.0]
+metadata/_edit_horizontal_guides_ = [320.0]
+
+[node name="Arc" parent="." instance=ExtResource("3_cmunl")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(544, 220)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_j4aoe")
+script = ExtResource("2_cmunl")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D"]
+physics_material_override = SubResource("PhysicsMaterial_vy5i1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/RigidBody2D"]
+scale = Vector2(14, 14)
+shape = SubResource("CircleShape2D_ngiyr")
+
+[node name="timer_label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 520.0
+offset_top = 16.0
+offset_right = 560.0
+offset_bottom = 58.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_font_sizes/font_size = 30
+script = ExtResource("5_h1gsm")
+
+[node name="Timer" type="Timer" parent="timer_label"]
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -505
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 1172.0
+offset_bottom = 659.0
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = 296.0
+offset_right = 192.0
+offset_bottom = 360.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_font_sizes/font_size = 20
+script = ExtResource("4_d3xhb")
+
+[node name="Main_Menu" type="Button" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.15847209, 0.15847248, 0.15847215, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_66tf5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hsfv8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_opxuv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_66tf5")
+text = "Main Menu"
+script = ExtResource("7_hsfv8")
+
+[connection signal="pressed" from="Main_Menu" to="Main_Menu" method="_on_pressed"]

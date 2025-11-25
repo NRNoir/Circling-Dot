@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://b6ffsephylpkb"]
+
+[ext_resource type="Texture2D" uid="uid://b7dsvukvkosqr" path="res://images/Red_Circle_full.png" id="1_j4aoe"]
+[ext_resource type="Script" uid="uid://c4pjh62gchkae" path="res://scripts/CercleMovement.gd" id="2_cmunl"]
+[ext_resource type="PackedScene" uid="uid://bg6y8xqw6klwe" path="res://scenes/arc.tscn" id="3_cmunl"]
+[ext_resource type="Script" uid="uid://2pmbp5x61fnk" path="res://scripts/Score.gd" id="4_d3xhb"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vy5i1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ngiyr"]
+
+[node name="first_scene" type="Node2D"]
+metadata/_edit_vertical_guides_ = [544.0]
+metadata/_edit_horizontal_guides_ = [320.0]
+
+[node name="Arc" parent="." instance=ExtResource("3_cmunl")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(544, 220)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_j4aoe")
+script = ExtResource("2_cmunl")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D"]
+physics_material_override = SubResource("PhysicsMaterial_vy5i1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/RigidBody2D"]
+scale = Vector2(14, 14)
+shape = SubResource("CircleShape2D_ngiyr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -505
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 1172.0
+offset_bottom = 659.0
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8.000061
+offset_top = 296.0
+offset_right = 176.00006
+offset_bottom = 360.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/font_shadow_color = Color(0.50534403, 0.5053441, 0.50534403, 1)
+theme_override_font_sizes/font_size = 23
+script = ExtResource("4_d3xhb")

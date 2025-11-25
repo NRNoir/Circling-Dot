@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=3 uid="uid://seihwycqwda1"]
+
+[ext_resource type="Script" uid="uid://fkaarp6efbn8" path="res://scripts/quit_button.gd" id="1_8r2k3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lwpag"]
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0.099985994, 0.09998601, 0.09998592, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.27752784, 0.27752766, 0.27752778, 1)
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8r2k3"]
+bg_color = Color(0.8288101, 2.7193873e-06, 5.7756904e-07, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 1
+shadow_offset = Vector2(0, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8r2k3")
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -64.0
+offset_right = -16.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.23392498, 0.23392567, 0.23392522, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_lwpag")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8r2k3")
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 32.0
+offset_top = -36.0
+offset_right = 176.0
+offset_bottom = 28.0
+grow_vertical = 2
+text = "Score : "
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
