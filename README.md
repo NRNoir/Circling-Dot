@@ -10,6 +10,7 @@ Ce Repo représente la compilation de mes différents scripts utilisés pour la 
 ## Table des matieres
 
 - [A propos](#a-propos)
+- [But du jeu](#but-du-jeu)
 - [Technologies](#technologies)
 - [Scripts utilises](#scripts-utilises)
 - [Installation](#installation)
@@ -25,6 +26,15 @@ Mon objectif avec ce mini-projet est d’apprendre l’utilisation du moteur God
 
 Certains scripts ont été réalisé avec l'aide de tutoriels trouvé sur Youtube. 
 Le jeu a été développé environ 4 jours. 
+
+
+## But du jeu
+
+Le but du jeu est simple. Il faut cliquer sur le cercle rouge - le Dot. Quand le joueur clique sur le Dot, il augmente son score de 10 points et le timer d'une seconde. 
+Cependant, cela augmente la vitesse et diminue la taille du Dot.
+
+L'objectif étant de faire le score le plus élevé.
+
 
 ## Technologies
 
